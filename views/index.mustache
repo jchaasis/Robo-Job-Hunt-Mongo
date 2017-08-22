@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Robo Job Hunt </title>
+    <meta charset="utf-8">
+    <link
+    rel="stylesheet" href="/main.css" >
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/index">All Robots</a></li>
+        <li><a href="/employed">Employed</a></li>
+        <li><a href="/unemployed">Looking for work</a></li>
+
+
+      </ul>
+    </nav>
+    <div>
+      <h1>robots</h1>
+
+      <main class="container">
+        {{#users}}
+          <div class="user">
+            <img src={{avatar}}>
+            <h2>{{name}}</h2>
+            <p> {{ job }} </p>
+            <p>{{company}}</p>
+          </div>
+        {{/users}}
+      </main>
+    </div>
+  </body>
+
+
+</html>
